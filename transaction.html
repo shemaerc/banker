@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>transaction form</title>
+</head>
+<link rel="stylesheet" type="text/css" href="allBanka.css" />
+<body>
+<form action="" method="post">
+<table width="413" height="366" border="0" cellspacing="2" align="center">
+  <tr>
+    <td width="605">
+    <div id="wrap">
+    <div id="title">transaction Form
+    </div>
+    <div id="form_div">
+        <label>Account Number* </label>
+        <br/>
+        <input class="form" type="text" name="account" id="textfield" required="required" placeholder="Account Number" /> <br/>
+      <label>Amount* </label>
+        <br/> 
+        <input class="form" type="text" name="amount" id="textfield" required="required" placeholder="Amount" /><br/>
+        <label>Transaction type* </label><br/>
+        <select class="form">
+        <option value="debit">Debit</option>
+        <option value="credit">Cledit</option>
+        </select><br/>
+       
+        <label>Create On* </label>
+        <br/>
+        <input class="form"  type="date" name="date" id="date" required="required" /><br/>
+         <label>Cashier Id* </label>
+        <br/>
+        <input class="form" type="text" name="cashier_id" id="textfield" required="required" placeholder="Password"  /><br/>
+        <label>Old Balance </label>
+        <br/>
+        <input class="form" type="text" name="old_balance" id="textfield" required="required"  placeholder="Old Balance" disabled="disabled" /><br/>
+         <label>New Balance </label>
+        <br/>
+        <input class="form" type="text" name="new_balance" id="textfield" required="required"  placeholder="New balance" disabled="disabled" />
+    </div>
+    <div id="button">
+    <input type="reset" name="reset" /><input type="submit" name="save" id="save" />
+    </div>
+    
+    </div>
+      </td>
+  </tr>
+</table>
+
+</form>
+</body>
+</html>
