@@ -1,0 +1,427 @@
+@charset "utf-8";
+/* CSS Document */
+#wrap {
+	background-color: #E2E8EF;
+	clear: both;
+	float: left;
+	min-height: 100px;
+	width: 100%;
+	border-top-width: 5px;
+	border-right-width: 5px;
+	border-bottom-width: 5px;
+	border-left-width: 5px;
+	border-top-color: #5775AC;
+	border-right-color: #5775AC;
+	border-bottom-color: #5775AC;
+	border-left-color: #5775AC;
+	padding: 10px;
+	border-radius:3%;
+}
+#title {
+	background-color: #889DB3;
+	clear: both;
+	float: left;
+	height: 30px;
+	width: 100%;
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #FFF;
+	text-align: center;
+	margin-bottom: 20px;
+}
+#form_div {
+	background-color: #FFF;
+	clear: both;
+	float: left;
+	height: 330px;
+	width: 100%;
+	padding-left: 5px;
+}
+#button {
+	background-color: #BAC6D1;
+	clear: both;
+	float: left;
+	height: 30px;
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;
+	margin-top: 10px;
+}
+.form{
+	width:400px;
+	height:10;
+	}
+#message {
+	background-color: #FFF;
+	clear: both;
+	float: left;
+	height: 60px;
+	width: 100%;
+}
+<!-------------------------------------end of forms------ start of detail----------------------------------------->
+ {
+	background-color: #CCC;
+	clear: both;
+	float: left;
+	height: 30px;
+	width: 100%;
+	margin-top: 10px;
+}
+.owner {
+	background-color: #CCC;
+	clear: both;
+	float: left;
+	height: 30px;
+	width: 100%;
+	margin-top: 10px;
+}
+.description {
+	background-color: #F2FBFF;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 50%;
+	text-align: right;
+}
+.data {
+	background-color: #FFF;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 50%;
+}
+#footer {
+	background-color: #BAC6D1;
+	clear: both;
+	float: left;
+	height: 30px;
+	width: 100%;
+	margin-top: 10px;
+	text-align: center;
+	padding-top: 5px;
+}
+<!-------------------------------start lists-------------------------------------------->
+#container1 {
+	background-color: #F2FBFF;
+	clear: both;
+	float: left;
+	min-height: 330px;
+	width: 100%;
+}
+.account_title {
+	background-color: #69C;
+	clear: both;
+	float: left;
+	height: 30px;
+	width: 100%;
+}
+#fname {
+	background-color: #BAC6D1;
+	text-align: left;
+	clear: none;
+	float: left;
+	width: 20%;
+	height: 30px;
+	color: #FFFFFF;
+}
+#lname {
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 17.5%;
+	background-color: #BAC6D1;
+	color: #FFF;
+}
+#email{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 17.5%;
+	background-color: #BAC6D1;
+	color: #FFF;
+}
+#type{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 15%;
+	background-color: #BAC6D1;
+	color: #FFF;
+}
+#view{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 10%;
+	background-color: #BAC6D1;
+	color: #FFF;
+}
+#active{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 10%;
+	background-color: #BAC6D1;
+	color: #FFF;
+}
+#delete{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 10%;
+	background-color: #BAC6D1;
+	color: #FFF;
+}
+.fname_on_list {
+	background-color: #FFF;
+	text-align: left;
+	clear: none;
+	float: left;
+	width: 20%;
+	height: 30px;
+	padding-top: 5px;
+	margin-top: 3px;
+}
+.lname_on_list {
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 17.5%;
+	background-color: #FFF;
+	padding-top: 5px;
+	margin-top: 3px;
+}
+.email_on_list{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 17.5%;
+	background-color: #FFF;
+	padding-top: 5px;
+	margin-top: 3px;
+}
+.type_on_list{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 15%;
+	background-color: #FFF;
+	padding-top: 5px;
+	margin-top: 3px;
+}
+.view_on_list{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 10%;
+	background-color: #FFF;
+	padding-top: 5px;
+	margin-top: 3px;
+}
+.active_on_list{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 10%;
+	background-color: #FFF;
+	padding-top: 5px;
+	margin-top: 3px;
+}
+.delete_on_list{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 10%;
+	background-color: #FFF;
+	padding-top: 5px;
+	margin-top: 3px;
+}
+<!---------------------------------->
+.account_title {
+	background-color: #69C;
+	clear: both;
+	float: left;
+	height: 30px;
+	width: 100%;
+}
+#acc_number {
+	background-color: #BAC6D1;
+	text-align: left;
+	clear: none;
+	float: left;
+	width: 20%;
+	height: 30px;
+	color: #FFFFFF;
+}
+#date {
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 10%;
+	background-color: #BAC6D1;
+	color: #FFF;
+}
+#amount{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 10%;
+	background-color: #BAC6D1;
+	color: #FFF;
+}
+#o_balance{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 20%;
+	background-color: #BAC6D1;
+	color: #FFF;
+}
+#n_balance{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 10%;
+	background-color: #BAC6D1;
+	color: #FFF;
+}
+#cashier{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 10%;
+	background-color: #BAC6D1;
+	color: #FFF;
+}
+#type{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 10%;
+	background-color: #BAC6D1;
+	color: #FFF;
+}
+.acc_number_on_list {
+	background-color: #FFF;
+	text-align: left;
+	clear: none;
+	float: left;
+	width: 20%;
+	height: 30px;
+	padding-top: 5px;
+	margin-top: 3px;
+}
+.date_on_list {
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 10%;
+	background-color: #FFF;
+	padding-top: 5px;
+	margin-top: 3px;
+}
+.amount_on_list{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 10%;
+	background-color: #FFF;
+	padding-top: 5px;
+	margin-top: 3px;
+}
+.o_balance_on_list{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 20%;
+	background-color: #FFF;
+	padding-top: 5px;
+	margin-top: 3px;
+}
+.n_balance_on_list{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 10%;
+	background-color: #FFF;
+	padding-top: 5px;
+	margin-top: 3px;
+}
+.cashier_on_list{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 10%;
+	background-color: #FFF;
+	padding-top: 5px;
+	margin-top: 3px;
+}
+.type_on_list{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 10%;
+	background-color: #FFF;
+	padding-top: 5px;
+	margin-top: 3px;
+}
+#view1{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 10%;
+	background-color: #BAC6D1;
+	color: #FFF;
+}
+.view1_on_list {
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 10%;
+	background-color: #FFF;
+	padding-top: 5px;
+	margin-top: 3px;
+}
+#container {
+	background-color: #F2FBFF;
+	clear: both;
+	float: left;
+	min-height: 330px;
+	width: 100%;
+}
+#container {
+	background-color: #F2FBFF;
+	clear: both;
+	float: left;
+	min-height: 330px;
+	width: 100%;
+}
+
+
+<!--------------------------->
