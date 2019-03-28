@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+#acc_number {
+	background-color: #BAC6D1;
+	text-align: left;
+	clear: none;
+	float: left;
+	width: 30%;
+	height: 30px;
+	color: #FFFFFF;
+}
+
+#status{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 10%;
+	background-color: #BAC6D1;
+	color: #FFF;
+}
+#balance{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 20%;
+	background-color: #BAC6D1;
+	color: #FFF;
+}
+
+
+.acc_number_on_list {
+	background-color: #FFF;
+	text-align: left;
+	clear: none;
+	float: left;
+	width: 30%;
+	height: 30px;
+	padding-top: 5px;
+	margin-top: 3px;
+}
+
+.status_on_list{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 10%;
+	background-color: #FFF;
+	padding-top: 5px;
+	margin-top: 3px;
+}
+.balance_on_list{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 20%;
+	background-color: #FFF;
+	padding-top: 5px;
+	margin-top: 3px;
+}
+#type{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 15%;
+	background-color: #BAC6D1;
+	color: #FFF;
+}
+
+.type_on_list{
+	text-align: center;
+	clear: none;
+	float: left;
+	height: 30px;
+	width: 15%;
+	background-color: #FFF;
+	padding-top: 5px;
+	margin-top: 3px;
+}
+
