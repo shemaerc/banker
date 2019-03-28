@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>users register</title>
+<link rel="stylesheet" type="text/css" href="allBanka.css" />
+</head>
+
+<body>
+<form action="" method="post" enctype="multipart/form-data">
+<table width="416" height="446" border="0" cellspacing="2" align="center">
+  <tr>
+    <td width="605">
+    <div id="wrap">
+    <div id="title">EDIT User  
+    </div>
+    <div id="form_div">
+        <label>First Name* </label>
+        <br/>
+        <input class="form" type="text" name="fname" id="textfield" required="required" placeholder="First Name" /> <br/>
+      <label>Last Name* </label>
+        <br/>
+        <input class="form" type="text" name="lname" id="textfield"required="required" placeholder="Last Name" /><br/>
+        <label>E-mail* </label><br/>
+        <input class="form" type="email" name="email" id="email" required="required"  placeholder="your E-mail"/><br/>
+         <label>Password* </label>
+        <br/>
+        <input class="form" type="password" name="password1" id="textfield"required="required" placeholder="Password"  /><br/>
+        <label>comform Password* </label>
+        <br/>
+        <input class="form" type="password" name="password2" id="textfield"required="required"  placeholder="conform Password" /><br/>
+        <label>type* </label><br/>
+        <select class="form">
+        <option value="client">client</option>
+        <option value="staff">staff</option>
+        </select><br/>
+        <label>Is Admin ? * </label><br/>
+        <input type="radio" name="radion" value="yes" />Yes<input type="radio" name="radion" value="no" />No <br/>
+        <label>Profile Image </label><br/>
+        <input type="file" name="image" />
+    </div>
+    <div id="button">
+    <input type="submit" name="EDIT" id="EDIT"  value="EDIT"/>
+    </div>
+    
+    </div>
+      </td>
+  </tr>
+</table>
+
+</form>
+</body>
+</html>
