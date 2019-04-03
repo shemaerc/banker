@@ -1,3 +1,26 @@
+#header_div {
+	background-color: #E2E8EF;
+	clear: none;
+	float: left;
+	height: 70px;
+	width: 100%;
+	margin-bottom: 20px;
+	color: #476487;
+	text-align: center;
+}
+#body_content {
+	clear: none;
+	float: left;
+	min-height: 200px;
+	width: 60%;
+	background-color: #F3F5F8;
+	margin-left: 250px;
+	border-radius: 5%;
+	color: #6A86AE;
+	font-size: 24px;
+	padding: 20px;
+	text-align: center;
+}
 #acc_number {
 	background-color: #BAC6D1;
 	text-align: left;
