@@ -145,7 +145,7 @@
 	height: 30px;
 	width: 50%;
 }
-#footer {
+#footer2 {
 	background-color: #333333;
 	clear: both;
 	float: left;
@@ -153,7 +153,6 @@
 	width: 100%;
 	text-align: center;
 	padding-top: 5px;
-	margin: 10px;
 	opacity: 0.5;
 	filter: alpha(opacity=50);
 	color: #FFF;
@@ -505,10 +504,6 @@
 	border-bottom-color: #093;
 	border-left-color: #093;
 	text-align: center;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
 	border-radius: 10%;
 	border-top-width: 10px;
 	border-right-width: 10px;
@@ -516,6 +511,8 @@
 	border-left-width: 10px;
 	opacity: 0.8;
 	filter: alpha(opacity=50);
+	font-size: 1.6vw;
+	padding: 5px;
 }
 #address {
 	color: #FFF;
@@ -539,13 +536,11 @@
 	border-bottom-color: #F0F0F0;
 	border-left-color: #F0F0F0;
 	text-align: center;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	border-radius:10%;
+	border-radius: 10%;
 	opacity: 0.8;
 	filter: alpha(opacity=50);
+	font-size: 1.6vw;
+	padding: 5px;
 }
 #signIn:hover {
  opacity: 1.0;
@@ -554,4 +549,37 @@
 #signUp:hover {
 opacity: 1.0;
   filter: alpha(opacity=100);
+}
+@media only screen and (max-width: 640px) {
+#signUp {
+	padding-right: 3px;
+	padding-left: 3px;
+	}
+#signIn
+{padding-right: 3px;
+	padding-left: 3px;
+	}
+	table{
+		width:100%;
+		
+		}
+#index_body {
+	width: 100%;
+	margin-right: 1px;
+	margin-bottom: 10px;
+	margin-left: 1px;
+	padding-top: 10px;
+	padding-right: 1px;
+	padding-bottom: 10px;
+	padding-left: 1px;
+	}
+#footer2 {
+	margin: 1px;
+}
+#address {
+	height: 100px;
+	width: 100%;
+	margin-left: 1px;
+}
+
 }
