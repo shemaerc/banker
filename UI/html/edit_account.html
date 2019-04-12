@@ -1,10 +1,41 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>new account form</title>
-<link rel="stylesheet" type="text/css" href="allBanka.css" />
+<title>edit account form</title>
+<link rel="stylesheet" type="text/css" href="../css/allBanka.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="../Js/responsive.js"></script>
 </head>
 
 <body>
+<div id="index_header">
+  <div id="index_header_title">
+  <h1><font size="+6">||||B</font>ANKA    </h1></div>
+  <div id="index_login">
+    <img src="../../images.png" id="img" onClick="menu()" onMouseOver="menu()"/>
+    <a href="account_detail.html"><div id="signIn"><< Back</div></a>
+    
+    <a href="../../index.html"><div id="signUp">LogOut</div></a>
+   
+    
+  </div>
+   <div id="responsive_mainy" onMouseOver="menu()" onMouseOut="move()">
+     <a href="../../index.html"><div id="popover_signUp">LogOut</div></a>
+    <a href="account_detail.html"> <div id="popover_signIn"><< Back</div></a>
+     
+   </div>
+  <div id="index_mainu">
+    <a href="../../index.html"><div id="index_home">HOME</div></a>
+   <div id="about_us">ABOUT US</div>
+    <div id="contact_us">CONTACT US</div>
+    
+   
+    
+    
+  </div>
+</div>
+<div id="index_body">
+
 <form action="" method="post">
 <table width="430" height="326" border="0" cellspacing="2" align="center">
   <tr>
@@ -15,12 +46,12 @@
     <div id="form_div">
         <label>Account Number </label>
         <br/>
-        <input class="form" type="text" name="number" id="textfield" required="required" placeholder="account Number" disabled="disabled" /> <br/>
+        <input class="form" type="text" name="number" id="textfield" required placeholder="account Number" disabled="disabled" /> <br/>
       <label>Created On* </label>
         <br/>
-        <input class="form" type="date" name="date" id="textfield" required="required" /><br/>
+        <input class="form" type="date" name="date" id="textfield" required  placeholder="dd-mm-yyyy"/><br/>
         <label>Account Owner* </label><br/>
-        <input class="form" type="text" name="owner" id="owner" required="required"  placeholder="Owner"/><br/>
+        <input class="form" type="text" name="owner" id="owner" required  placeholder="Owner"/><br/>
         <label>Account type* </label><br/>
         <select class="form">
         <option value="current">current</option>
@@ -29,7 +60,7 @@
         <br/>
         <label>Account Status* </label>
         <br/>
-        <input class="form" type="text" name="status" id="textfield" required="required"/><br/>
+        <input class="form" type="text" name="status" id="textfield" required placeholder="Account status"/><br/>
          <label>Account Balance </label>
         <br/>
         <input class="form" type="text" name="status" id="textfield" value="0.0 Rwf" disabled="disabled"/>
@@ -45,5 +76,16 @@
 </table>
 
 </form>
+</div>
+<div id="footer2">
+  <div id="address">ADRESS<br/>
+KK 111 Street, Kigali<br/>
+E-mail: info@banka.com<br/>
+Tel: (+250)783333333 / (+250)789999999 / (+250)782222222<br/>
+Website: www.Banka.com</div>
+
+</div>
+    
+
 </body>
 </html>
