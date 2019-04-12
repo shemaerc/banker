@@ -1,10 +1,42 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Account Detail</title>
-<link rel="stylesheet" type="text/css" href="allBanka.css" />
+<title>index</title>
+<link rel="stylesheet" type="text/css" href="../css/allBanka.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="../Js/responsive.js"></script>
 </head>
 
 <body>
+<div id="index_header">
+  <div id="index_header_title">
+  <h1><font size="+6">||||B</font>ANKA    </h1></div>
+  <div id="index_login">
+    <img src="../../images.png" id="img" onClick="menu()" onMouseOver="menu()"/>
+    <a href="client_account_list.html"><div id="signIn"><< Back</div></a>
+    
+    <a href="../../index.html"><div id="signUp">LogOut</div></a>
+   
+    
+  </div>
+   <div id="responsive_mainy" onMouseOver="menu()" onMouseOut="move()">
+     <a href="../../index.html"><div id="popover_signUp">LogOut</div></a>
+     <div id="popover_signIn"><< Back</div>
+     
+   </div>
+  <div id="index_mainu">
+    <a href="../../index.html"><div id="index_home">HOME</div></a>
+   <div id="about_us">ABOUT US</div>
+    <div id="contact_us">CONTACT US</div>
+    
+   
+    
+    
+  </div>
+</div>
+<div id="index_body">
+
+
 <table width="427" height="306" border="0" cellspacing="2" align="center">
   <tr>
     <td width="436">
@@ -33,7 +65,7 @@
     <div class="description">Balance: </div>
     <div class="data"></div>
   </div>
-  <div id="footer">
+  <div id="button">
    <a href="edit_account.html"><button>EDIT</button></a>
   </div>
 </div>
@@ -42,5 +74,16 @@
       </td>
   </tr>
 </table>
+</div>
+<div id="footer2">
+  <div id="address">ADRESS<br/>
+KK 111 Street, Kigali<br/>
+E-mail: info@banka.com<br/>
+Tel: (+250)783333333 / (+250)789999999 / (+250)782222222<br/>
+Website: www.Banka.com</div>
+
+</div>
+    
+
 </body>
 </html>

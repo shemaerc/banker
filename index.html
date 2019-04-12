@@ -1,26 +1,44 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>index</title>
 <link rel="stylesheet" type="text/css" href="UI/css/allBanka.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="../Js/responsive.js"></script>
 </head>
 
 <body>
 <div id="index_header">
   <div id="index_header_title">
-  <h1>BANKA    </h1></div>
+  <h1><font size="+6">||||B</font>ANKA    </h1></div>
   <div id="index_login">
-    
-    <a href="UI/html/login.html"><div id="signIn">SignIn</div></a>
+    <img src="images.png" id="img" onClick="menu()" onMouseOver="menu()"/>
+    <a href="index.html"><div id="signIn">SignIn</div></a>
     
     <a href="UI/html/user_register.html"><div id="signUp">SignUp</div></a>
+   
+    
   </div>
-  <div id="index_mainu"></div>
+   <div id="responsive_mainy" onMouseOver="menu()" onMouseOut="move()">
+    <a href="index.html"> <div id="popover_signIn">SignIn</div></a>
+    <a href="UI/html/user_register.html"> <div id="popover_signUp">SignUp</div></a>
+     
+   </div>
+  <div id="index_mainu">
+   <div id="index_home">HOME</div>
+   <div id="about_us">ABOUT US</div>
+    <div id="contact_us">CONTACT US</div>
+    
+   
+    
+    
+  </div>
 </div>
-
 <div id="index_body">
+
+
  <form action="" method="post">
-<table width="399" height="247" border="0" cellspacing="2" align="center">
+  <table width="399" height="247" border="0" cellspacing="2" align="center">
   <tr>
     <td width="559">
     <div id="wrap">
@@ -35,7 +53,7 @@
       <div id="message"> -------------------------------------------------------------------</div>
     </div>
     <div id="button">
-    <input type="reset" name="reset" /><a href="admin_page.html"><input type="button" name="save" id="save" value="Login" /></a>
+    <input type="reset" name="reset" /><a  href="UI/html/admin_page.html"><input type="button" name="save" id="save" value="Login" /></a>
    
     
     </div>
