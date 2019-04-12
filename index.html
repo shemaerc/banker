@@ -1,61 +1,77 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>index</title>
-<style type="text/css">
-#header {
-	background-color: #E2E8EF;
-	clear: none;
-	float: left;
-	height: 70px;
-	width: 100%;
-	margin-bottom: 20px;
-	color: #476487;
-}
-#body {
-	clear: none;
-	float: left;
-	min-height: 200px;
-	width: 60%;
-	background-color: #F3F5F8;
-	margin-left: 250px;
-	border-radius: 5%;
-	color: #6A86AE;
-	font-size: 24px;
-	padding: 20px;
-	text-align: center;
-}
-#login {
-	background-color: #E2E8EF;
-	float: right;
-	height: 50px;
-	width: 15%;
-	padding-top: 20px;
-	text-align: center;
-}
-#header_title{
-	background-color: #E2E8EF;
-	clear: none;
-	float: left;
-	height: 70px;
-	width: 75%;
-	text-align: right;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="UI/css/allBanka.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="../Js/responsive.js"></script>
 </head>
 
 <body>
-<div id="header">
-  <div id="header_title">
-  <h1>YOU ARE WELCOME TO BANKA APPLICATION    </h1></div>
-  <div id="login"><a href="login.html"><button>SignIn</button></a><a href="user_register.html"><button>SignUp</button></a>
-    <p>&nbsp;</p>
+<div id="index_header">
+  <div id="index_header_title">
+  <h1><font size="+6">||||B</font>ANKA    </h1></div>
+  <div id="index_login">
+    <img src="images.png" id="img" onClick="menu()" onMouseOver="menu()"/>
+    <a href="index.html"><div id="signIn">SignIn</div></a>
+    
+    <a href="UI/html/user_register.html"><div id="signUp">SignUp</div></a>
+   
+    
+  </div>
+   <div id="responsive_mainy" onMouseOver="menu()" onMouseOut="move()">
+    <a href="index.html"> <div id="popover_signIn">SignIn</div></a>
+    <a href="UI/html/user_register.html"> <div id="popover_signUp">SignUp</div></a>
+     
+   </div>
+  <div id="index_mainu">
+   <div id="index_home">HOME</div>
+   <div id="about_us">ABOUT US</div>
+    <div id="contact_us">CONTACT US</div>
+    
+   
+    
+    
   </div>
 </div>
+<div id="index_body">
 
-<div id="body">
-  <p>Banka is a light-weight core banking application that powers banking operations like account
-    creation, customer deposit and withdrawals. </p>
-  <p>Please signup and create bank accounts online</p>
+
+ <form action="" method="post">
+  <table width="399" height="247" border="0" cellspacing="2" align="center">
+  <tr>
+    <td width="559">
+    <div id="wrap">
+    <div id="title">login</div>
+    <div id="form_div">
+        <label>Your E-mail* </label>
+        <br/>
+        <input class="form" type="email" name="email" id="textfield" required placeholder="Enter Your E-mail" /> <br/>
+      <label>Your Password* </label>
+        <br/>
+        <input class="form" type="password" name="date" id="textfield" required placeholder="Enter Your Password" /><br/>
+      <div id="message"> -------------------------------------------------------------------</div>
+    </div>
+    <div id="button">
+    <input type="reset" name="reset" /><a  href="UI/html/admin_page.html"><input type="button" name="save" id="save" value="Login" /></a>
+   
+    
+    </div>
+    
+    </div>
+      </td>
+  </tr>
+</table>
+
+</form>
+</div>
+<div id="footer2">
+  <div id="address">ADRESS<br/>
+KK 111 Street, Kigali<br/>
+E-mail: info@banka.com<br/>
+Tel: (+250)783333333 / (+250)789999999 / (+250)782222222<br/>
+Website: www.Banka.com</div>
+
 </div>
     
 

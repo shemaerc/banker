@@ -1,5 +1,164 @@
 @charset "utf-8";
 /* CSS Document */
+#index_header {
+	background-color: #E2E8EF;
+	clear: none;
+	float: left;
+	min-height: 140px;
+	width: 100%;
+	margin-bottom: 20px;
+	color: #476487;
+	position: fixed;
+}
+#index_header_title{
+	background-color: #E2E8EF;
+	clear: none;
+	float: left;
+	height: 100px;
+	width: 20%;
+	text-align: left;
+	padding-left: 50px;
+}
+#index_mainu {
+	background-color:#889DB3;
+	clear: none;
+	float: left;
+	min-height: 40px;
+	width: 100%;
+}
+#create_bank_account {
+	background-color: #FFF;
+	clear: none;
+	float: left;
+	height: 70px;
+	width: 30%;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 40px;
+	font-size: 1.8vw;
+	-webkit-box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
+	box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
+	color: #535B93;
+}
+#create_bank_account:hover {
+	opacity: 0.6;
+	filter: alpha(opacity=50);
+	}
+#transaction_history {
+	background-color: #FFF;
+	margin: 5px;
+	clear: none;
+	float: left;
+	height: 70px;
+	width: 30%;
+	font-size: 1.8vw;
+	-webkit-box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
+	box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
+	color: #535B93;
+}
+#transaction_history:hover {
+	opacity: 0.6;
+	filter: alpha(opacity=50);
+	}
+#client_account_list {
+	background-color: #FFF;
+	margin: 5px;
+	clear: none;
+	float: left;
+	height: 70px;
+	width: 30%;
+	font-size: 1.8vw;
+	-webkit-box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
+	box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
+	color: #535B93;
+}
+#client_account_list:hover {
+	opacity: 0.6;
+	filter: alpha(opacity=50);
+	}
+#add_transaction {
+	background-color: #FFF;
+	clear: none;
+	float: left;
+	height: 70px;
+	width: 30%;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 40px;
+	font-size: 1.8vw;
+	-webkit-box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
+	box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
+	color: #535B93;
+}
+#add_transaction:hover {
+	opacity: 0.6;
+	filter: alpha(opacity=50);
+	}
+#user_list {
+	background-color: #FFF;
+	margin: 5px;
+	clear: none;
+	float: left;
+	height: 70px;
+	width: 30%;
+	font-size: 1.8vw;
+	-webkit-box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
+	box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
+	color: #535B93;
+}
+#user_list:hover {
+	opacity: 0.6;
+	filter: alpha(opacity=50);
+	}
+#add_user {
+	background-color: #FFF;
+	margin: 5px;
+	clear: none;
+	float: left;
+	height: 70px;
+	width: 30%;
+	font-size: 1.8vw;
+	-webkit-box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
+	box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
+	color: #535B93;
+}
+#add_user:hover {
+	opacity: 0.6;
+	filter: alpha(opacity=50);
+	}
+
+
+
+
+
+
+
+#index_login {
+	background-color: #E2E8EF;
+	float: right;
+	height: 60px;
+	width: 15%;
+	padding-top: 20px;
+	text-align: center;
+	padding-bottom: 20px;
+	margin-right: 30px;
+}
+#responsive_mainy {
+	background-color: #999;
+	clear: none;
+	float: left;
+	height: 1px;
+	width: 100%;
+}
+
 #wrap {
 	background-color: #E2E8EF;
 	clear: both;
@@ -37,6 +196,7 @@
 	width: 100%;
 	padding-left: 5px;
 }
+
 #button {
 	background-color: #BAC6D1;
 	clear: both;
@@ -51,14 +211,7 @@
 	width:400px;
 	height:30px;
 	}
-#message {
-	background-color: #FFF;
-	clear: both;
-	float: left;
-	height: 60px;
-	width: 100%;
-}
-<!-------------------------------------end of forms------ start of detail----------------------------------------->
+-----------------------------------end of forms------ start of detail---------------------------------------
  {
 	background-color: #CCC;
 	clear: both;
@@ -75,6 +228,13 @@
 	width: 100%;
 	margin-top: 10px;
 }
+#message {
+	background-color: #FFF;
+	clear: both;
+	float: left;
+	height: 60px;
+	width: 100%;
+}
 .description {
 	background-color: #F2FBFF;
 	clear: none;
@@ -90,17 +250,23 @@
 	height: 30px;
 	width: 50%;
 }
-#footer {
-	background-color: #BAC6D1;
+#footer2 {
+	background-color: #333333;
 	clear: both;
 	float: left;
-	height: 30px;
+	height: 100px;
 	width: 100%;
-	margin-top: 10px;
 	text-align: center;
 	padding-top: 5px;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	color: #FFF;
 }
-<!-------------------------------start lists-------------------------------------------->
+#footer:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+-----------------------------start lists------------------------------------------
 #container1 {
 	background-color: #F2FBFF;
 	clear: both;
@@ -248,7 +414,7 @@
 	padding-top: 5px;
 	margin-top: 3px;
 }
-<!---------------------------------->
+------------------------------
 .account_title {
 	background-color: #69C;
 	clear: both;
@@ -424,4 +590,238 @@
 }
 
 
-<!--------------------------->
+-----------------------
+#sign in {
+	background-color: #FFF;
+	clear: none;
+	float: left;
+	height: 80px;
+	width: 50%;
+}
+#signUp {
+	background-color: #FFF;
+	clear: none;
+	float: right;
+	height: 20px;
+	width: 40%;
+	border-top-color: #3745A8;
+	border-right-color: #3745A8;
+	border-bottom-color: #3745A8;
+	border-left-color: #3745A8;
+	text-align: center;
+	border-radius: 10%;
+	border-style: ridge;
+	opacity: 0.8;
+	filter: alpha(opacity=50);
+	font-size: 1.4vw;
+	padding: 5px;
+}
+#address {
+	color: #FFF;
+	background-color: #333;
+	text-align: left;
+	clear: none;
+	float: left;
+	height: 100px;
+	width: 37.5%;
+	margin-left: 300px;
+}
+
+#signIn {
+	background-color: #FFF;
+	clear: none;
+	float: left;
+	height: 20px;
+	width: 38%;
+	text-align: center;
+	border-radius: 10%;
+	opacity: 0.8;
+	filter: alpha(opacity=50);
+	font-size: 1.4vw;
+	margin-top: 5px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	
+
+	
+}
+#signIn:hover {
+ opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+#signUp:hover {
+opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+#img{
+	width:1%;
+	height:1px;
+	visibility:hidden;
+	}
+@media only screen and (max-width: 1100px) {
+		#signUp{width:38%;}
+		#signIn{width:38%;}}
+@media only screen and (min-width: 640px) {
+		#responsive_mainy{
+			visibility:hidden;
+		}
+		}
+@media only screen and (max-width: 880px) {
+#img{
+	width:100%;
+	height:60px;
+	visibility:visible;
+	border-radius:7%;
+	}
+#img:hover{
+		opacity: 0.8;
+	filter: alpha(opacity=50);
+		}
+	#signUp {
+	padding-right: 3px;
+	padding-left: 3px;
+	visibility:hidden;
+	}
+#signIn
+{padding-right: 3px;
+	padding-left: 3px;
+	visibility:hidden;
+	}
+	table{
+		width:100%;
+		
+		}
+
+#footer2 {
+	margin: 1px;
+}
+#address {
+	height: 100px;
+	width: 100%;
+	margin-left: 1px;
+}
+
+#contact_us {
+	background-color: #889DB3;
+	clear: none;
+	float: left;
+	height: 40px;
+	width: 30%;
+	text-align: center;
+	color: #FFF;
+}
+}
+#index_body {
+	background-color: #F8F9FA;
+	clear: none;
+	float: left;
+	min-height: 300px;
+	width: 100%;
+	margin-top: 160px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+}
+#contact_us {
+	background-color: #889DB3;
+	clear: none;
+	float: left;
+	height: 40px;
+	width: 15%;
+	text-align: center;
+	color: #FFF;
+}
+#about_us {
+	background-color: #889DB3;
+	clear: none;
+	float: left;
+	height: 40px;
+	width: 15%;
+	text-align: center;
+	color: #FFF;
+}
+#about_us:hover {
+	background-color: #FFFFFF;
+	color: #999;
+	padding-top:10px;
+}
+#index_home {
+	background-color: #889DB3;
+	clear: none;
+	float: left;
+	height: 40px;
+	width: 15%;
+	text-align: center;
+	padding-right: 8px;
+	color: #FFF;
+	margin-left: 20px;
+}
+#contact_us:hover {
+	background-color: #FFFFFF;
+	color: #999;
+	padding-top:10px;
+}
+
+#index_home:hover {
+	background-color: #FFFFFF;
+	color: #999;
+	padding-top: 10px;
+}
+#responsive_mainy{
+	z-index: 1000;}
+#popover_signIn {
+	background-color: #FFF;
+	clear: none;
+	float: right;
+	height: 20px;
+	width: 20%;
+	text-align: center;
+	border-radius: 10%;
+	opacity: 0.8;
+	filter: alpha(opacity=50);
+	font-size: 3vw;
+	padding: 5px;
+	margin-top: 5px;
+	visibility: hidden;
+	margin-right: 20px;
+}
+#popover_signUp {
+	background-color: #FFF;
+	clear: none;
+	float: right;
+	height: 20px;
+	width: 20%;
+	border-top-color: #3745A8;
+	border-right-color: #3745A8;
+	border-bottom-color: #3745A8;
+	border-left-color: #3745A8;
+	text-align: center;
+	border-radius: 10%;
+	border-style: ridge;
+	opacity: 0.8;
+	filter: alpha(opacity=50);
+	font-size: 3vw;
+	padding: 5px;
+	visibility: hidden;
+	margin-right: 5px;
+}
+#responsive_mainy{
+	background-color: #E2E8EF;
+	}
+	-----------------------------------------------------------------
+.container {
+  border: 1px solid #333;
+  height: 250px;
+  width: 250px;
+}
+.center {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.center > span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}

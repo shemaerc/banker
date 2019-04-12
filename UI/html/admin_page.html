@@ -1,48 +1,68 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>index</title>
+<link rel="stylesheet" type="text/css" href="../css/allBanka.css" />
 <link rel="stylesheet" type="text/css" href="second.css" />
-<style type="text/css">
-#header_div {
-	background-color: #E2E8EF;
-	clear: none;
-	float: left;
-	height: 70px;
-	width: 100%;
-	margin-bottom: 20px;
-	color: #476487;
-}
-#body_content {
-	clear: none;
-	float: left;
-	min-height: 200px;
-	width: 60%;
-	background-color: #F3F5F8;
-	margin-left: 250px;
-	border-radius: 5%;
-	color: #6A86AE;
-	font-size: 24px;
-	padding: 20px;
-	text-align: center;
-}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="../Js/responsive.js"></script>
 </head>
 
 <body>
-<div id="header_div">
-  <div id="header_title">
-  <h1>YOU ARE WELCOME TO BANKA APPLICATION    </h1></div>
-  <div id="login_button">
-    <p>&nbsp;</p>
+<div id="index_header">
+  <div id="index_header_title">
+  <h1><font size="+6">||||B</font>ANKA    </h1></div>
+  <div id="index_login">
+    <img src="../../images.png" id="img" onClick="menu()" onMouseOver="menu()"/>
+    <a href="../../index.html"><div id="signIn"><< Back</div></a>
+    
+    <a href="../../index.html"><div id="signUp">LogOut</div></a>
+   
+    
+  </div>
+   <div id="responsive_mainy" onMouseOver="menu()" onMouseOut="move()">
+     <a href="../../index.html"><div id="popover_signUp">LogOut</div></a>
+     <a href="../../index.html"><div id="popover_signIn"><< Back</div></a>
+     
+   </div>
+  <div id="index_mainu">
+    <a href="../../index.html"><div id="index_home">HOME</div></a>
+   <div id="about_us">ABOUT US</div>
+    <div id="contact_us">CONTACT US</div>
+    
+   
+    
+    
   </div>
 </div>
+<div id="index_body">
 
-<div id="body_content">
- <a href="new_account.html">
- <button >Create_Bank_Account</button></a><br/><br/><a href="transaction_history.html"><button>Transaction_History</button></a><br/><br/>
- <a href="client_account_list.html"><button >Client_Account_List</button></a><br/><br/><a href="transaction.html"><button>Add_Transaction</button></a><br/><br/>
- <a href="users_list.html">
- <button >Users_List</button></a><br/><br/><a href="user_register.html"><button>Add_Use</button></a><br/>
+
+
+  <a href="new_account.html"><div class="container" id="create_bank_account"> <div class="center"><span>CREATE BANK ACCOUNT >></span></div></div></a>
+  
+  <a href="transaction_history.html"><div class="container" id="transaction_history">
+        <div class="center"><span>TRANSACTION HISTORY >></span></div></div></a>
+
+  <a href="client_account_list.html"><div class="container" id="client_account_list">
+    <div class="center"><span>CLIENT ACCOUNT LIST >></span></div></div> </a>
+    
+ <a href="transaction.html"> <div class="container" id="add_transaction">
+    <div class="center"><span>ADD TRANSACTION >><span></div></div></a>
+    
+  <a href="users_list.html"><div class="container" id="user_list">
+    <div class="center"><span>USER LIST >></span></div></div></a>
+    
+  <a href="user_register.html"><div class="container" id="add_user">
+    <div class="center"><span>ADD USER >></span></div></div></a>
+</div>
+<div id="footer2">
+  <div id="address">ADRESS<br/>
+KK 111 Street, Kigali<br/>
+E-mail: info@banka.com<br/>
+Tel: (+250)783333333 / (+250)789999999 / (+250)782222222<br/>
+Website: www.Banka.com</div>
+
 </div>
     
 
