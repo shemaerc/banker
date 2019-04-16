@@ -145,7 +145,7 @@
 	background-color: #E2E8EF;
 	float: right;
 	height: 60px;
-	width: 15%;
+	width: 20%;
 	padding-top: 20px;
 	text-align: center;
 	padding-bottom: 20px;
@@ -201,15 +201,19 @@
 	background-color: #BAC6D1;
 	clear: both;
 	float: left;
-	height: 30px;
+	height: 40px;
 	width: 100%;
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 2px;
 	margin-top: 10px;
+	vertical-align: middle;
 }
 .form{
-	width:400px;
-	height:30px;
+	width: 400px;
+	height: 30px;
+	padding-top: 1px;
+	margin-top: 10px;
+	margin-bottom: 5px;
 	}
 -----------------------------------end of forms------ start of detail---------------------------------------
  {
@@ -220,6 +224,24 @@
 	width: 100%;
 	margin-top: 10px;
 }
+#General_button {
+	background-color: #566589;
+	clear: none;
+	float: left;
+	width: 30%;
+	height: 23px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	color: #FFF;
+	margin-left: 37%;
+	padding-top: 4px;
+}
+#General_button:hover {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
 .owner {
 	background-color: #CCC;
 	clear: both;
@@ -602,8 +624,8 @@
 	background-color: #FFF;
 	clear: none;
 	float: right;
-	height: 20px;
-	width: 40%;
+	height: 30px;
+	width: 47%;
 	border-top-color: #3745A8;
 	border-right-color: #3745A8;
 	border-bottom-color: #3745A8;
@@ -614,7 +636,10 @@
 	opacity: 0.8;
 	filter: alpha(opacity=50);
 	font-size: 1.4vw;
-	padding: 5px;
+	padding-top: 15px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 0px;
 }
 #address {
 	color: #FFF;
@@ -631,20 +656,18 @@
 	background-color: #FFF;
 	clear: none;
 	float: left;
-	height: 20px;
-	width: 38%;
+	height: 30px;
+	width: 45%;
 	text-align: center;
 	border-radius: 10%;
 	opacity: 0.8;
 	filter: alpha(opacity=50);
 	font-size: 1.4vw;
 	margin-top: 5px;
-	padding-top: 5px;
-	padding-right: 5px;
+	padding-top: 15px;
+	padding-right: 0px;
 	padding-bottom: 5px;
 	padding-left: 5px;
-	
-
 	
 }
 #signIn:hover {
