@@ -14,7 +14,7 @@ const accounts=[
               createdOn:1/3/2018,
               owner:1,
               type:"saving",
-              status:"draft",
+              status:"active",
               balance:2000
                }
               ];

@@ -15,7 +15,7 @@ const users = [
       email: "shema2@gmail.com",
       firstName: "mukunzi",
       lastName:"nowa",
-      password:"123",
+      password:"124",
       type:"staff",
       isAdmin:"yes"
    }

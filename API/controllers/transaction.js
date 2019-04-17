@@ -1,7 +1,17 @@
 
-import accounts from '../models/account';
-import transaction from '../models/transaction';
+import accounts from '../db/account';
+import transaction from '../db/transaction';
 
+
+function idGeneretor(dbInf)
+    {
+    var count=0;
+    dbInf.map((dbSpecificInfo, index) => {
+      count=dbSpecificInfo.id+1;
+    }); return count;
+  }
+
+  
   module.exports= class transaction1 {
     static getTransactions(req, res) {
         return res.status(200).json({
@@ -30,6 +40,20 @@ import transaction from '../models/transaction';
       let error = '';
        var newBalance=0;
        
+       accounts.forEach((item) => {
+
+        if (item.accountNumber === accountNo && (item.status === "draft" || item.status === "dormant") ) {
+        return res.status(400).json({
+          message:' transaction fail! this account is not active',
+          });
+        }else if(!req.body.amount){
+          return res.status(400).json({
+            message:' Amount required',
+            });
+        }
+        
+     });
+
          if(transactionType === 'debit' && accountNo)
          { 
            transaction.forEach((val, key) => {
@@ -43,8 +67,8 @@ import transaction from '../models/transaction';
                   
                 }
                   });
-             const newTransactionValue={
-                id:1,
+             const New_Transaction={
+                id:idGeneretor(transaction),
                 accountNumber:accountNo,
                 amount:parseInt(transactionData.amount),
                 cashier:2,
@@ -52,11 +76,11 @@ import transaction from '../models/transaction';
                 balance:newBalance                   
 
              };
-             transaction.push(newTransactionValue);
+             transaction.push(New_Transaction);
              return res.status(200).json({
                status:'integer',
                message:'transaction successfully made',
-              newTransactionValue,
+               New_Transaction,
           });
          }
          
@@ -85,7 +109,7 @@ import transaction from '../models/transaction';
                 }
                   });
              const newTransactionValue={
-                id:1,
+                id:idGeneretor(transaction),
                 accountNumber:accountNo,
                 amount:parseInt(transactionData.amount),
                 cashier:2,

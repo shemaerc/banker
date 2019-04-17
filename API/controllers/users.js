@@ -1,8 +1,16 @@
-//const users = require ('../db/users');
-import users from '../models/users';
+import users from '../db/users';
+//import idgenerete from 'idGen';
+import jwt from 'jsonwebtoken';
 
-// export default class User {
-  module.exports= class User {
+function idGeneretor(dbInf)
+    {
+    var count=0;
+    dbInf.map((dbSpecificInfo, index) => {
+      count=dbSpecificInfo.id+1;
+    }); return count;
+  }
+
+ module.exports= class User {
     static getUsers(req, res) {
         return res.status(200).json({
             users,
@@ -11,10 +19,10 @@ import users from '../models/users';
     static getUser(req, res) {
       const id = parseInt(req.params.id);
     
-        users.forEach((item) => {
-          if (item.id === id) {
+        users.forEach((user) => {
+          if (user.id === id) {
             return res.status(200).json({
-                item,
+                user,
 
             });
           }
@@ -23,47 +31,113 @@ import users from '../models/users';
       }
 
     static register(req, res) {
-      //data from the request body
-        const userData = req.body;
+        const User1= req.body;
+        const email=req.body.email;
         let error = '';
-
-        users.forEach((val, key) => {
-            if (val.email === userData.email) {
+        users.forEach((newUser, key) => {
+            if (newUser.email === User1.email) {
                 error = 'user already exists';
             }
         });
-
+      
+       if (!req.body.firstName) {
+          return res.status(400).send({
+            success: 'false',
+            message: 'firstName is required',
+          });
+        } else if (!req.body.lastName) {
+          return res.status(400).send({
+            success: 'false',
+            message: 'lastName is required',
+          });
+        } else if(!req.body.email){
+          return res.status(400).send({
+            success: 'false',
+            message: 'Email is required',
+          });
+        }else if (!req.body.password) {
+          return res.status(400).send({
+            success: 'false',
+            message: 'password is required',
+          });
+        } else if (!req.body.type) {
+          return res.status(400).send({
+            success: 'false',
+            message: 'user type is required',
+          });
+        } else if (req.body.type === "staff") {
+                  if(!req.body.isAdmin){
+                             return res.status(400).send({
+                              success: 'false',
+                             message: 'is admin or cachier feel it please',
+                          });
+                        }
+        }
         if (error) {
             return res.status(200).json({
                 error,
             });
         }
-
-        users.push(userData);
+  var token = jwt.sign({email},'mySecrete',{
+          expiresIn:86400
+       });
+       if(User1.type === 'client'){
+       const User= {
+          token:token,  
+          id: idGeneretor(users),
+          email: User1.email,
+          firstName: User1.firstName,
+          lastName: User1.lastName,
+          password: User1.password,
+          type: User1.type,
+        };
+        users.push(User);
         return res.status(200).json({
-            users,
+            User,
         });
+      }else{
+        const User= {
+          token:token,  
+          id: idGeneretor(users),
+          email: User1.email,
+          firstName: User1.firstName,
+          lastName: User1.lastName,
+          password: User1.password,
+          type: User1.type,
+          isAdmin: User1.isAdmin
+        };
+        users.push(User);
+        return res.status(200).json({
+            User,
+        });
+      }
+       
+       
+        
     }
 
     static login(req, res) {
-      // get sign data from the request body
+      
       const { email, password } = req.body;
-    console.log(email);
       if (!email || !password) {
         res.status(400).json({
           status: 'fail',
           message: 'Email and password are required',
         });
       } else {
-
+      
       const userData = req.body;
-      users.map((item) => {
-        console.log(item);
-          if (item.email === userData.email && item.password ===userData.password) {
-              return res.status(200).json({
-                message:' YOU ARE SUCCESSFULL SIGIN!',
-                item,
-            });
+      users.map((user) => {
+          if (user.email === userData.email && user.password ===userData.password) {
+             
+              var token = jwt.sign({email},'mySecrete',{
+                    expiresIn:86400
+                 });
+                 return res.status(200).json({
+                  message:' YOU ARE SUCCESSFULL SIGIN!',
+                  token,
+                    user,
+              });
           }else {
             res.status(404).json({
               status: 'fail',
@@ -93,12 +167,7 @@ import users from '../models/users';
       });
     }
   
-    if (!req.body.id) {
-      return res.status(400).send({
-        success: 'false',
-        message: 'id is required',
-      });
-    } else if (!req.body.firstName) {
+   if (!req.body.firstName) {
       return res.status(400).send({
         success: 'false',
         message: 'firstName is required',
@@ -174,4 +243,5 @@ import users from '../models/users';
   
    
   }
+
 }

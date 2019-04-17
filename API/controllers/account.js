@@ -1,7 +1,14 @@
 //const accounts = require('../db/account');
-import accounts from '../models/account';
-
-// export default class User 
+import accounts from '../db/account';
+import dateTime from 'dateformat';
+var now = new Date();
+function idGeneretor(dbInf)
+    {
+    var count=0;
+    dbInf.map((dbSpecificInfo, index) => {
+      count=dbSpecificInfo.id+1;
+    }); return count;
+  }
 
   module.exports= class Account {
     static getAccounts(req, res) {
@@ -32,14 +39,34 @@ import accounts from '../models/account';
                 error = 'account already exists';
             }
         });
-
         if (error) {
-            return res.status(200).json({
+            return res.status(400).json({
                 error,
             });
         }
+        if(!req.body.owner)
+        {
+          return res.status(400).json({
+            message:" owner required",
+        });
 
-        accounts.push(accountData);
+        }else if(!req.body.type)
+        {
+          return res.status(400).json({
+            message:" account type required",
+        });
+        }
+        const tempAccount={
+          id:idGeneretor(accounts),
+          accountNumber:"1200-"+idGeneretor(accounts)+"12345-"+idGeneretor(accounts),
+          createdOn:dateTime(now, "isoDateTime"),
+          owner:2,
+          type:accountData.type,
+          status:"dormant",
+          balance:0
+        };
+
+        accounts.push(tempAccount);
         return res.status(200).json({
             success: 'false',
             message: 'account created successfuly',
@@ -54,6 +81,7 @@ import accounts from '../models/account';
     const accountNumber = req.params.id;
     var accountFound;
     var itemIndex;
+
     accounts.map((acc, index) => {
       if (acc.accountNumber === accountNumber) {
         accountFound = acc;
@@ -62,64 +90,12 @@ import accounts from '../models/account';
     });
   
     if (!accountFound) {
-      return res.status(404).send({
+      return res.status(400).send({
         success: 'false',
         message: 'account not found',
       });
     }
-  
-    if (!req.body.id) {
-      return res.status(400).send({
-        success: 'false',
-        message: 'id is required',
-      });
-    } else if (!req.body.accountNumber) {
-      return res.status(400).send({
-        success: 'false',
-        message: 'account is required',
-      });
-    }
-    else if(!req.body.createdOn)
-    {
-        return res.status(400).send({
-            success: 'false',
-            message: 'date created on is required',
-          });
 
-    }
-    else if(!req.body.owner)
-    {
-        return res.status(400).send({
-            success: 'false',
-            message: 'owner id on is required',
-          });
-
-    }
-    else if(!req.body.type)
-    {
-        return res.status(400).send({
-            success: 'false',
-            message: 'type  is required',
-          });
-
-    }
-    else if(!req.body.status)
-    {
-        return res.status(400).send({
-            success: 'false',
-            message: 'status is required',
-          });
-
-    }
-    else if(!req.body.balance)
-    {
-        return res.status(400).send({
-            success: 'false',
-            message: 'balance is required',
-          });
-
-    }
-  
     const editAccount = {
       id: accountFound.id,
       accountNumber: req.body.accountNumber || accountFound.accountNumber,
@@ -132,7 +108,7 @@ import accounts from '../models/account';
   
     accounts.splice(itemIndex, 1,editAccount);
   
-    return res.status(201).send({
+    return res.status(200).send({
       success: 'true',
       message: 'account upDate successfully',
       editAccount,
@@ -149,7 +125,7 @@ static activeDeactive(req,res)
     
     if (!accountNumber) {
 
-    return res.status(404).send({
+    return res.status(400).send({
       success: 'false',
       message: 'put account number please!',
     });

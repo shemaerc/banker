@@ -1,8 +1,8 @@
 import express from 'express';
 import morgan from'morgan';
-import usersRouter from'./routes/users';
-import accountRouter from'./routes/account';
-import transaction from'./routes/transaction';
+import usersRouter from'./route/users';
+import accountRouter from'./route/account';
+import transaction from'./route/transaction';
 import bodyParser from 'body-parser';
 const app = express();
 app.use(express.json());

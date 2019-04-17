@@ -1,5 +1,5 @@
 import express from 'express';
-import Account from '../controllers/account';
+import Account from '../my_functions/account';
 const router = express.Router();
 router.get('/accounts', Account.getAccounts);
 router.get('/accounts/:accn', Account.getAccount);

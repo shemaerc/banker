@@ -1,5 +1,5 @@
 import express from'express';
-const transaction = require('../controllers/transaction');
+const transaction = require('../my_functions/transaction');
 
 const router = express.Router();
 
